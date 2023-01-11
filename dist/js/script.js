@@ -3,37 +3,37 @@ let searchBar = document.querySelector('.search-bar-container');
 let formBtn = document.querySelector('#login-btn');
 let loginForm = document.querySelector('.login-form-container');
 let formClose = document.querySelector('#form-close');
-/* let menu = document.querySelector('#menu-bar');
+let menu = document.querySelector('#menu-bar');
 let navbar = document.querySelector('.navbar');
-let videoBtn = document.querySelectorAll('.vid-btn'); */
+/* let videoBtn = document.querySelectorAll('.vid-btn'); */
 
 window.onscroll = () =>{
     searchBtn.classList.remove('fa-times');
     searchBar.classList.remove('search-bar-container_active');
-    /* menu.classList.remove('fa-times');
-    navbar.classList.remove('active');
-    loginForm.classList.remove('active'); */
+    menu.classList.remove('fa-times');
+    navbar.classList.remove('navbar_active');
+    /* loginForm.classList.remove('active'); */
 }
 
-/* menu.addEventListener('click', () =>{
+menu.addEventListener('click', () =>{
     menu.classList.toggle('fa-times');
-    navbar.classList.toggle('active');
-}); */
+    navbar.classList.toggle('navbar_active');
+});
  
 searchBtn.addEventListener('click', () =>{
     searchBtn.classList.toggle('fa-times');
     searchBar.classList.toggle('search-bar-container_active');
 });
 
-/* formBtn.addEventListener('click', () =>{
-    loginForm.classList.add('active');
+formBtn.addEventListener('click', () =>{
+    loginForm.classList.add('login-form-container_active');
 });
 
 formClose.addEventListener('click', () =>{
-    loginForm.classList.remove('active');
+    loginForm.classList.remove('login-form-container_active');
 });
 
-videoBtn.forEach(btn =>{
+/* videoBtn.forEach(btn =>{
     btn.addEventListener('click', ()=>{
         document.querySelector('.controls .active').classList.remove('active');
         btn.classList.add('active');

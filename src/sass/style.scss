@@ -28,6 +28,10 @@ html {
     scroll-behavior: smooth;
 }
 
+section {
+    padding: 1.5rem;
+}
+
 .container {
     display: block;
     max-width: 1140px;
@@ -45,6 +49,10 @@ h1, h2, h3, h4, h5 {
     padding: 0;
 }
 
+
 @import 'blocks/header';
 @import 'blocks/form';
 @import 'blocks/buttons';
+@import 'blocks/home';
+
+@import 'blocks/media';

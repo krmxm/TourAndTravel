@@ -1,4 +1,4 @@
-.header {
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -72,4 +72,14 @@
             }
         }
     }
+}
+
+#menu-bar {
+    color: #fff;
+    border:.1rem solid #fff;
+    border-radius: .5rem;
+    font-size: 3rem;
+    padding: .5rem 1.2rem;
+    cursor: pointer;
+    display: none;
 }
