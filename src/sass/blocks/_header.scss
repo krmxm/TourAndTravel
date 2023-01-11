@@ -1,0 +1,75 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: $second-color;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    .logo {
+        font-size: 2.5rem;
+        font-weight: bolder;
+        color: #fff;
+        text-transform: uppercase;
+        span {
+            color: $main-color;
+        }
+    }
+    .navbar {
+        a {
+            color: #fff;
+            font-size: 2rem;
+            margin:0 .8rem;
+            &:hover {
+                color: $main-color;
+            }
+        }
+    }
+    .icons {
+        i {
+            font-size: 2.5rem;
+            color: #fff;
+            cursor: pointer;
+            margin-right: 2rem;
+            &:hover {
+                color: $main-color;
+            }
+        }
+    }
+    .search-bar-container {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        padding: 1.5rem 2rem;
+        background: $second-color;
+        border-top: .1rem solid rgba(255,255,255,.2);
+        display: flex;
+        align-items: center;
+        z-index: 1001;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        &_active {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        }
+        #search-bar {
+            width: 100%;
+            padding: 1rem;
+            text-transform: none;
+            color: $second-color;
+            font-size: 1.7rem;
+            border-radius: .5rem;
+        }
+        label {
+            color: #fff;
+            cursor: pointer;
+            font-size: 3rem;
+            margin-left: 1.5rem;
+            &:hover {
+                color: $main-color;
+            }
+        }
+    }
+}

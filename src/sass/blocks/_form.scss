@@ -1,0 +1,68 @@
+.login-form-container {
+    position: fixed;
+    top: -120%;
+    left: 0;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    form {
+        margin: 2rem;
+        padding: 1.5rem 2rem;
+        border-radius: .5rem;
+        background: #fff;
+        width: 50rem;
+        h3 {
+            font-size: 3rem;
+            color: #444;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        .box {
+            width: 100%;
+            padding: 1rem;
+            font-size: 1.7rem;
+            color: $second-color;
+            margin: .6rem 0;
+            border: .1rem solid rgba(0,0,0,.3);
+            text-transform: none;
+            &:focus {
+                border-color: $main-color;
+            }
+        }
+        #remember {
+            margin: 2rem 0;
+        }
+        lable {
+            font-size: 1.5rem;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+        }
+        p {
+            padding: .5rem 0;
+            font-size: 1.5rem;
+            color:#666;
+            a {
+                color: $main-color;
+                &:hover {
+                    color:$second-color;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    #form-close {
+        position: absolute;
+        top: 2rem;
+        right: 3rem;
+        font-size: 5rem;
+        color: #fff;
+        cursor: pointer;
+    }
+}

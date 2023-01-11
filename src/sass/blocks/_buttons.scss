@@ -1,0 +1,14 @@
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    background: $main-color;
+    color: #fff;
+    padding: .8rem 3rem;
+    border:.2rem solid $main-color;
+    cursor: pointer;
+    font-size: 1.7rem;
+    &:hover {
+        background:rgba(255, 165, 0, .2);
+        color: $main-color;
+    }
+}
