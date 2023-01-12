@@ -47,4 +47,24 @@
         font-size: 50%;
     }
 
+    .book {
+        &__heading {
+            span {
+                font-size: 2.5rem;
+            }
+        }
+    }
+
+    .contact {
+        .row {
+            form {
+                .inputBox {
+                    input{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
 }

@@ -1,0 +1,33 @@
+.review {
+    .box {
+        padding: 2rem;
+        text-align: center;
+        box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+        border-radius: .5rem;
+        img {
+            height: 13rem;
+            width: 13rem;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+        h3 {
+            font-size: 2.5rem;
+            color: $second-color;
+        }
+        p {
+            font-size: 1.5rem;
+            color: $third-color;
+            padding: 1rem 0;
+        }
+        .stars {
+            i{
+                font-size: 1.7rem;
+                color: $main-color;
+            }
+        }
+    }
+    .review-slider {
+        padding-bottom: 2rem;
+    }
+}
