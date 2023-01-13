@@ -40,6 +40,12 @@
         span {
             color: $main-color;
         }
+        a {
+            color: $main-color;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
 }
   

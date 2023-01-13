@@ -1,11 +1,15 @@
 .home {
     min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: column;
-    position: relative;
-    z-index: 0;
+    padding: 0;
+    &__desktop {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+        position: relative;
+        z-index: 0;
+    }
     &__content {
         text-align: center;
         &__title {
@@ -64,7 +68,88 @@
         }
     }
 }
-.home-media {
+
+
+.home-mobile {
+    height: 100%;
     display: none;
+    padding:0;
 }
 
+.home .slide{
+text-align: center;
+padding:2rem;
+display: flex;
+align-items: center;
+justify-content: center;
+background-size: cover !important;
+background-position: center !important;
+min-height: 100vh;
+}
+
+.home .slide .content{
+width: 85rem;
+display: none;
+}
+
+.home .swiper-slide-active .content{
+display: inline-block;
+}
+
+.home .slide .content span{
+display: block;
+font-size: 2.2rem;
+color: #fff9;
+padding-bottom: 1rem;
+animation:fadeIn .2s linear backwards .2s;
+}
+
+.home .slide .content h3{
+font-size: 6vw;
+color: #fff;
+text-transform: uppercase;
+line-height: 1;
+text-shadow: 0 1.5rem 3rem rgba(0,0,0,.3);
+padding:1rem 0;
+animation:fadeIn .2s linear backwards .4s;
+}
+
+.home .slide .content .btn{
+animation:fadeIn .2s linear backwards .6s;
+}
+
+.home .swiper-button-next,
+.home .swiper-button-prev{
+top:inherit;
+left: inherit;
+bottom: 0;
+right: 0;
+height: 7rem;
+width: 7rem;
+background: rgba(0,0,0,.3);
+color: $main-color;
+}
+.home .swiper-button-prev {
+top:inherit;
+bottom: 0;
+left: 0;
+height: 7rem;
+width: 7rem;
+background: rgba(0,0,0,.3);
+color: $main-color;
+}
+
+.home .swiper-button-next:hover,
+.home .swiper-button-prev:hover{
+background: $main-color;
+color: #fff;
+}
+
+.home .swiper-button-next::after,
+.home .swiper-button-prev::after{
+font-size: 2rem;
+}
+
+.home .swiper-button-prev{
+right: 7rem;
+}

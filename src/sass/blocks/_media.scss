@@ -40,10 +40,12 @@
             }
         }
     }
-    .home-desktop {
-        display: none;
+    .home {
+        &__desktop {
+            display: none;
+        }
     }
-    .home-media {
+    .home-mobile {
         display: block;
     }
 }

@@ -7,22 +7,24 @@
         <title>Travel</title>
     
         <!-- Primary Meta Tags -->
-        <!-- <title>Global Opt - логистика полного цикла из Китая в Россию</title> -->
-        <meta name="title" content="Global Opt - логистика полного цикла из Китая в Россию">
-        <meta name="description" content="Доставка грузов из Китая в Россию и СНГ всеми видами транспорта">
+        <meta name="title" content="Travel and Tour">
+        <meta name="description" content="ADVENTURE IS WORTHWHILE
+        Discover New Places With Us, Adventure Awaits">
     
         <!-- Open Graph / Facebook -->
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://metatags.io/">
-        <meta property="og:title" content="Global Opt - логистика полного цикла из Китая в Россию">
-        <meta property="og:description" content="Доставка грузов из Китая в Россию и СНГ всеми видами транспорта">
+        <meta property="og:title" content="Travel and Tour">
+        <meta property="og:description" content="ADVENTURE IS WORTHWHILE
+        Discover New Places With Us, Adventure Awaits">
         <meta property="og:image" content="img/for_tags.png">
     
         <!-- Twitter -->
         <meta property="twitter:card" content="summary_large_image">
         <meta property="twitter:url" content="https://metatags.io/">
-        <meta property="twitter:title" content="Global Opt - логистика полного цикла из Китая в Россию">
-        <meta property="twitter:description" content="Доставка грузов из Китая в Россию и СНГ всеми видами транспорта">
+        <meta property="twitter:title" content="Travel and Tour">
+        <meta property="twitter:description" content="ADVENTURE IS WORTHWHILE
+        Discover New Places With Us, Adventure Awaits">
         <meta property="og:image" content="img/for_tags.png">
     
         <!-- Favicon  -->
@@ -90,13 +92,13 @@
 
     <section class="home" id="home">
 
-        <div class="home__content">
-            <h3 class="home__content__title">adventure is worthwhile</h3>
-            <p class="home__content__subtitle">discover new places with us, adventure awaits</p>
-            <a href="#" class="btn home__content__btn">discover more</a>
-        </div>
-
-        <div class="home-desktop">
+        <div class="home__desktop">
+            <div class="home__content">
+                <h3 class="home__content__title">adventure is worthwhile</h3>
+                <p class="home__content__subtitle">discover new places with us, adventure awaits</p>
+                <a href="#" class="btn home__content__btn">discover more</a>
+            </div>
+    
             <div class="home__controls">
                 <span class="home__vid-btn home__vid-btn_active" data-src="img/vid-1.mp4"></span>
                 <span class="home__vid-btn" data-src="img/vid-2.mp4"></span>
@@ -110,19 +112,43 @@
             </div>
         </div>
 
-        <div class="home-media">
-            <div class="home__controls">
-                <span class="home__vid-btn home__vid-btn_active" data-src="img/home-slide-2.jpg"></span>
-                <span class="home__vid-btn" data-src="img/home-slide-2.jpg"></span>
-                <span class="home__vid-btn" data-src="img/home-slide-3.jpg"></span>
-    
-            </div>
-    
-            <div class="home__video-container">
-                <img src="img/home-slide-2.jpg" id="video-slider"></img>
-            </div>
-        </div>
 
+        <div class="home-mobile">
+            <div class="swiper home-slider">
+     
+                <div class="swiper-wrapper">
+          
+                   <div class="swiper-slide slide" style="background:url(img/home-slide-1.jpg) no-repeat">
+                      <div class="content">
+                         <span>explore, discover, travel</span>
+                         <h3>travel arround the world</h3>
+                         <a href="#" class="btn home__content__btn">discover more</a>
+                      </div>
+                   </div>
+          
+                   <div class="swiper-slide slide" style="background:url(img/home-slide-2.jpg) no-repeat">
+                      <div class="content">
+                         <span>explore, discover, travel</span>
+                         <h3>discover the new places</h3>
+                         <a href="#" class="btn home__content__btn">discover more</a>
+                      </div>
+                   </div>
+          
+                   <div class="swiper-slide slide" style="background:url(img/home-slide-3.jpg) no-repeat">
+                      <div class="content">
+                         <span>explore, discover, travel</span>
+                         <h3>make your tour worthwhile</h3>
+                         <a href="#" class="btn home__content__btn">discover more</a>
+                      </div>
+                   </div>
+                   
+                </div>
+          
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+          
+             </div>
+        </div>
     </section>
 
     <section class="book" id="book">
@@ -155,11 +181,11 @@
                 </div>
                 <div class="inputBox">
                     <h3>arrivals</h3>
-                    <input type="date">
+                    <input placeholder="Date" class="textbox-n" type="text" onmouseenter="(this.type='date')" id="date">
                 </div>
                 <div class="inputBox">
                     <h3>leaving</h3>
-                    <input type="date">
+                    <input placeholder="Date" class="textbox-n" type="text" onmouseenter="(this.type='date')" id="date">
                 </div>
                 <input type="submit" class="btn" value="book now">
             </form>
@@ -591,7 +617,8 @@
 
         </div>
 
-        <h1 class="credit"> created by <span> mr. web designer</span> | all right reserved! </h1>
+        <h1 class="credit"> created by <span> mr. web designer</span> | all right reserved!<br> website layout created by <span><a target="_blank" rel="noopener noreferrer" href="https://t.me/kramaxim">Kramarenko-dev</a></span>
+        </h1>
 
     </section>
 
