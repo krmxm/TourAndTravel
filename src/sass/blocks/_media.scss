@@ -40,6 +40,12 @@
             }
         }
     }
+    .home-desktop {
+        display: none;
+    }
+    .home-media {
+        display: block;
+    }
 }
 @media (max-width:450px) {
 
@@ -66,5 +72,4 @@
             }
         }
     }
-
 }

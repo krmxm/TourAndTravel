@@ -12,7 +12,7 @@ window.onscroll = () =>{
     searchBar.classList.remove('search-bar-container_active');
     menu.classList.remove('fa-times');
     navbar.classList.remove('navbar_active');
-    /* loginForm.classList.remove('active'); */
+    loginForm.classList.remove('active');
 }
 
 menu.addEventListener('click', () =>{
@@ -83,4 +83,12 @@ var swiper = new Swiper(".brand-slider", {
           slidesPerView: 5,
         },
       },
+});
+
+var swiper = new Swiper(".home-slider", {
+  loop:true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });

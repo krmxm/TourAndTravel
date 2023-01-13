@@ -31,6 +31,15 @@
             width: 100%;
             object-fit: cover;
         }
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
     }
     &__controls {
         padding: 1rem;
@@ -38,6 +47,9 @@
         background: rgba(0,0,0,.7);
         position: relative;
         top: 10rem;
+    }
+    &__controls-media {
+        display: none;
     }
     &__vid-btn {
         height: 2rem;
@@ -52,3 +64,7 @@
         }
     }
 }
+.home-media {
+    display: none;
+}
+

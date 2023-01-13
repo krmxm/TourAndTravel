@@ -29,7 +29,7 @@ html {
 }
 
 section {
-    padding: 1.5rem;
+    padding: 2rem 9%;
 }
 
 .container {
@@ -60,5 +60,7 @@ h1, h2, h3, h4, h5 {
 @import 'blocks/gallery';
 @import 'blocks/review';
 @import 'blocks/contact';
+@import 'blocks/brand';
+@import 'blocks/footer';
 
 @import 'blocks/media';
